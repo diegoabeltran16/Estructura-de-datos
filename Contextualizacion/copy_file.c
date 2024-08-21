@@ -1,39 +1,50 @@
 #include <stdio.h>
-#include "copy_file.h"
+#include <stdlib.h>
+#include "include/copy_file.h"  // Incluye la declaración de la función copyFile
 
 /**
- * Función que copia el contenido de un archivo fuente a un archivo destino.
- *
- * @param sourceFileName El nombre del archivo fuente que será copiado.
- * @param destFileName El nombre del archivo destino donde se copiará el contenido.
+ * @brief Copia el contenido de un archivo fuente a un archivo destino.
+ * 
+ * La función copyFile se encarga de abrir un archivo fuente para lectura y un archivo destino para escritura, 
+ * luego copia el contenido del archivo fuente al archivo destino carácter por carácter. 
+ * Si ocurre algún error al abrir cualquiera de los archivos, se muestra un mensaje de error detallado.
+ * 
+ * @param source La ruta y nombre del archivo fuente que se va a copiar.
+ * @param destination La ruta y nombre del archivo destino donde se copiará el contenido.
  */
-void copyFile(const char *sourceFileName, const char *destFileName) {
-    FILE *sourceFile, *destFile;
+void copyFile(const char *source, const char *destination) {
+    FILE *srcFile, *destFile;
     char ch;
 
-    // Abrir el archivo de origen en modo lectura
-    sourceFile = fopen(sourceFileName, "r");
-    if (sourceFile == NULL) {
-        printf("No se pudo abrir el archivo fuente %s\n", sourceFileName);
+    // Imprimir la ruta del archivo fuente para depuración
+    printf("Intentando abrir el archivo fuente: %s\n", source);
+
+    // Intentar abrir el archivo fuente en modo lectura
+    srcFile = fopen(source, "r");
+    if (srcFile == NULL) {
+        // Mostrar un mensaje de error si no se puede abrir el archivo fuente
+        perror("Error al abrir el archivo fuente");
         return;
     }
 
-    // Abrir el archivo de destino en modo escritura (crear o sobrescribir)
-    destFile = fopen(destFileName, "w");
+    // Intentar abrir el archivo de destino en modo escritura
+    destFile = fopen(destination, "w");
     if (destFile == NULL) {
-        printf("No se pudo crear el archivo destino %s\n", destFileName);
-        fclose(sourceFile);
+        // Mostrar un mensaje de error si no se puede abrir el archivo de destino
+        perror("Error al abrir el archivo de destino");
+        fclose(srcFile);  // Cerrar el archivo fuente antes de retornar
         return;
     }
 
-    // Leer el contenido del archivo fuente y escribirlo en el archivo destino
-    while ((ch = fgetc(sourceFile)) != EOF) {
+    // Copiar el contenido del archivo fuente al archivo de destino carácter por carácter
+    while ((ch = fgetc(srcFile)) != EOF) {
         fputc(ch, destFile);
     }
 
-    // Cerrar ambos archivos
-    fclose(sourceFile);
-    fclose(destFile);
+    // Imprimir un mensaje de éxito una vez que la copia se ha completado
+    printf("Archivo copiado exitosamente de %s a %s\n", source, destination);
 
-    printf("Archivo copiado exitosamente de %s a %s\n", sourceFileName, destFileName);
+    // Cerrar ambos archivos para liberar los recursos
+    fclose(srcFile);
+    fclose(destFile);
 }

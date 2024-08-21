@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    // Intentar abrir el archivo 'message.dat' en modo lectura
+    FILE *file = fopen("data/message.dat", "r");
+    if (file == NULL) {
+        // Mostrar un mensaje de error si el archivo no se puede abrir
+        printf("No se pudo abrir el archivo 'message.dat'.\n");
+    } else {
+        // Confirmar que el archivo se ha abierto correctamente
+        printf("Archivo 'message.dat' abierto correctamente.\n");
+        // Cerrar el archivo para liberar recursos
+        fclose(file);
+    }
+    return 0;
+}
