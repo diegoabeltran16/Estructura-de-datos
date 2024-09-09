@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b9459f0-8dcc-4d48-b60c-b12669ba3187" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Grupal/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/1_objetivos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/2_requerimientos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/3_componentes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/4_arquitectura.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/5_flujo_de_datos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/6_mejores_practicas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/detalles_del_proyecto/7_plan_de_desarrollo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/src/ArbolBinarioBusqueda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grupal/Arbol Binario de Números/src/Nodo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2lq1Qdf5AQ2UCr8WeH7U7h9cZ0S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/diego_dx9e5pi/OneDrive/Documents/Git Repos/Estructura-de-datos/Profundizacion/Grupal/Arbol Binario de Palabras",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\diego_dx9e5pi\OneDrive\Documents\Git Repos\Estructura-de-datos\Profundizacion\Grupal\Arbol Binario de Palabras" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\diego_dx9e5pi\OneDrive\Documents\Git Repos\Estructura-de-datos\Profundizacion\Grupal\Arbol Binario de Números\src" />
+      <recent name="C:\Users\diego_dx9e5pi\OneDrive\Documents\Git Repos\Estructura-de-datos\Profundizacion\Grupal\Arbol Binario de Números" />
+      <recent name="C:\Users\diego_dx9e5pi\OneDrive\Documents\Git Repos\Estructura-de-datos\Profundizacion\Grupal" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b9459f0-8dcc-4d48-b60c-b12669ba3187" name="Changes" comment="" />
+      <created>1725892780309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725892780309</updated>
+    </task>
+    <servers />
+  </component>
+</project>
