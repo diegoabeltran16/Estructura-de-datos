@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Clase Palabras.ArbolBinarioPalabras que gestiona la inserción de palabras en un árbol binario de búsqueda.
+ * Clase ArbolBinarioPalabras que gestiona la inserción de palabras en un árbol binario de búsqueda.
  * También permite mostrar las palabras ordenadas por la frecuencia de aparición de mayor a menor.
  */
 public class ArbolBinarioPalabras {
@@ -23,15 +23,6 @@ public class ArbolBinarioPalabras {
         raiz = insertarRecursivo(raiz, palabra);
     }
 
-    /**
-     * Método recursivo para insertar una palabra en el árbol binario de búsqueda.
-     * Inserta la palabra en la posición correcta, respetando el orden alfabético.
-     * Si la palabra ya existe en el árbol, se incrementa su frecuencia.
-     *
-     * @param nodo el nodo actual que se está evaluando.
-     * @param palabra la palabra que se desea insertar.
-     * @return el nodo raíz actualizado.
-     */
     private NodoPalabra insertarRecursivo(NodoPalabra nodo, String palabra) {
         if (nodo == null) {
             return new NodoPalabra(palabra); // Crear un nuevo nodo si no existe en el árbol
@@ -64,12 +55,6 @@ public class ArbolBinarioPalabras {
         return palabras;
     }
 
-    /**
-     * Método recursivo que recorre el árbol binario y agrega las palabras y sus frecuencias a una lista.
-     *
-     * @param nodo el nodo actual que se está evaluando.
-     * @param palabras la lista donde se almacenan las palabras y sus frecuencias.
-     */
     private void recorrerArbol(NodoPalabra nodo, List<NodoPalabra> palabras) {
         if (nodo != null) {
             recorrerArbol(nodo.izquierdo, palabras); // Recorrer el subárbol izquierdo
@@ -79,12 +64,23 @@ public class ArbolBinarioPalabras {
     }
 
     /**
-     * Método que imprime las palabras almacenadas en el árbol, ordenadas por frecuencia de mayor a menor.
+     * Método para imprimir las palabras ordenadas por frecuencia de aparición.
+     * Se imprime una tabla con las palabras y su frecuencia.
      */
     public void imprimirPalabrasPorFrecuencia() {
         List<NodoPalabra> palabras = obtenerPalabrasPorFrecuencia();
+
+        // Encabezado
+        System.out.println("==================================");
+        System.out.println(" Palabras ordenadas por frecuencia");
+        System.out.println("==================================");
+        System.out.printf("%-15s %10s\n", "Palabra", "Frecuencia");
+
         for (NodoPalabra np : palabras) {
-            System.out.println(np.palabra + ": " + np.frecuencia);
+            // Formatear la salida: palabra y su frecuencia
+            System.out.printf("%-15s %10d\n", np.palabra, np.frecuencia);
         }
+
+        System.out.println("==================================");
     }
 }
