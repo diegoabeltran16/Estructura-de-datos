@@ -2,7 +2,6 @@
 
 ## Grafo
 
-"""
 Clase Grafo:
     
     Clase que representa un Grafo utilizando listas de adyacencia.
@@ -70,11 +69,9 @@ Clase Grafo:
                     añadir vecino a visitados
                     añadir vecino a la cola
 
-"""
 
 ## main
 
-"""
 Función principal main():
     """
     Función principal que demuestra la construcción y recorrido de un grafo
@@ -101,4 +98,3 @@ Función principal main():
 
 Si este es el módulo principal a ejecutar, entonces llamar a main()
 
-"""
