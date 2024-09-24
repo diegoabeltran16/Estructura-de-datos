@@ -1,12 +1,14 @@
 # Pseudocodigo para desarrollar el código en Python del BFS
 
 ## Grafo
+
+"""
 Clase Grafo:
-    """
+    
     Clase que representa un Grafo utilizando listas de adyacencia.
     Permite la construcción de grafos, la adición de aristas y la realización de
     recorridos utilizando el algoritmo de Búsqueda en Amplitud (BFS).
-    """
+    
 
     Método inicializar():
         """
@@ -68,9 +70,11 @@ Clase Grafo:
                     añadir vecino a visitados
                     añadir vecino a la cola
 
+"""
 
 ## main
 
+"""
 Función principal main():
     """
     Función principal que demuestra la construcción y recorrido de un grafo
@@ -96,3 +100,5 @@ Función principal main():
     grafo.bfs(1)
 
 Si este es el módulo principal a ejecutar, entonces llamar a main()
+
+"""
